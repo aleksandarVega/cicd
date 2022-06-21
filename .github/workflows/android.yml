@@ -6,11 +6,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps: 
-    - name: checkout
-    - uses: actions/checkout@v3
-    - name: Use Node.js v17
-    - uses: actions/setup-node@v3
-      with:
-        node-version: 17
-    - run: yarn install --frozen-lockfile
-    - run: yarn test
+      - name: checkout
+      - uses: actions/checkout@v3
+      - name: Use Node.js v17
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 17
+      - run: yarn install --frozen-lockfile
+      - run: yarn test
