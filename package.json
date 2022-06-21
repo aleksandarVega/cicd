@@ -13,7 +13,10 @@
     "android:staging": "yarn android --variant=stagingDebug --appIdSuffix=staging",
     "android:staging:release": "cd android && ./gradlew assembleStagingRelease",
     "android:prod": "yarn android --variant=prodDebug",
-    "android:prod:release": "cd android && ./gradlew assembleProdRelease"
+    "android:prod:release": "cd android && ./gradlew assembleProdRelease",
+    "ios:dev": "yarn ios --scheme 'CiCdGaDev'",
+    "ios:staging": "yarn ios --scheme 'CiCdGaStaging'",
+    "ios:prod": "yarn ios --scheme 'CiCdGaProd'"
   },
   
   "dependencies": {
