@@ -6,6 +6,6 @@ export const YellowText = () => (
     testID="text"
     style={{color: 'yellow', fontSize: 40, backgroundColor: 'blue'}}
   >
-    Hey dude!
+    Hey dude!s
   </Text>
 );
