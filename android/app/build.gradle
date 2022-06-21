@@ -1,5 +1,15 @@
 apply plugin: "com.android.application"
 
+project.ext.envConfigFiles = [
+  prod: ".env.prod",
+  dev: ".env.dev",
+  staging: ".env.staging",
+];
+
+apply from: project(':react-native-config').projectDir.getPath() + "/dotenv.gradle"
+
+
+
 import com.android.build.OutputFile
 import org.apache.tools.ant.taskdefs.condition.Os
 
@@ -173,6 +183,29 @@ android {
         }
     }
 
+    flavorDimensions "default"
+
+	productFlavors {
+        dev {
+            minSdkVersion rootProject.ext.minSdkVersion
+            applicationId 'com.cicdga.dev'
+            targetSdkVersion rootProject.ext.targetSdkVersion
+            resValue "string", "build_config_package", "com.cicdga"
+        }
+        prod {
+            minSdkVersion rootProject.ext.minSdkVersion
+            applicationId 'com.cicdga'
+            targetSdkVersion rootProject.ext.targetSdkVersion
+            resValue "string", "build_config_package", "com.cicdga"
+        }
+        staging {
+            minSdkVersion rootProject.ext.minSdkVersion
+            applicationId 'com.cicdga.staging'
+            targetSdkVersion rootProject.ext.targetSdkVersion
+            resValue "string", "build_config_package", "com.cicdga"
+        }
+    }
+
     if (isNewArchitectureEnabled()) {
         // We configure the NDK build only if you decide to opt-in for the New Architecture.
         externalNativeBuild {
@@ -243,6 +276,7 @@ android {
         }
     }
 
+  
     // applicationVariants are e.g. debug, release
     applicationVariants.all { variant ->
         variant.outputs.each { output ->
