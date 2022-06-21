@@ -16,10 +16,9 @@ import {
   StyleSheet,
   Text,
   useColorScheme,
-  View,
-  NativeModules,
 } from 'react-native';
 import Config from 'react-native-config';
+import {YellowText} from './src/components/YellowText';
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 
@@ -37,6 +36,7 @@ const App = () => {
         style={backgroundStyle}
       >
         <Text style={styles.highlight}>{Config.API_KEY}</Text>
+        <YellowText />
       </ScrollView>
     </SafeAreaView>
   );
