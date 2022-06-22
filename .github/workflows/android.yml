@@ -1,6 +1,6 @@
 name: Android
 
-on: [push, pull_request]
+on: [push]
 
 jobs:
   build:
@@ -56,12 +56,17 @@ jobs:
       - name: Generate App APK
         run: |
           cd android && ./gradlew assembleProdRelease --no-daemon
-        
+     
       - name: Sign APK
         id: sign_app
         uses: r0adkll/sign-android-release@v1
         with:
-          releaseDirectory: android/app/build/outputs/apk/prod/release
+          if: github.ref == 'refs/heads/main' 
+            releaseDirectory: android/app/build/outputs/apk/prod/release
+          if: github.ref == 'refs/heads/staging' 
+            releaseDirectory: android/app/build/outputs/apk/staging/release
+          if: github.ref == 'refs/heads/dev' 
+            releaseDirectory: android/app/build/outputs/apk/dev/release
           signingKeyBase64: ${{ secrets.ANDROID_SIGNING_KEY }}
           alias: ${{ secrets.ANDROID_ALIAS }}
           keyStorePassword: ${{ secrets.ANDROID_KEY_STORE_PASSWORD }}
@@ -71,4 +76,11 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: app-release.apk
-          path: android/app/build/outputs/apk/prod/release
+          if: github.ref == 'refs/heads/main' 
+            path: android/app/build/outputs/apk/prod/release
+          if: github.ref == 'refs/heads/staging' 
+            path: android/app/build/outputs/apk/staging/release
+          if: github.ref == 'refs/heads/dev' 
+            path: android/app/build/outputs/apk/dev/release
+          
+          
