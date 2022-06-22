@@ -1,12 +1,11 @@
 name: Android
 
 on:
-  pull_request:
+  push:
     braches:
        - main
        - staging
        - dev
-    types: [closed]
     
 jobs:
   build:
