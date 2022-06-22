@@ -57,7 +57,7 @@ jobs:
 
       - name: Sign APK Prod
         if: github.ref == 'refs/heads/main' 
-        id: sign_app
+        id: sign_app_prod
         uses: r0adkll/sign-android-release@v1
         with:
           releaseDirectory: android/app/build/outputs/apk/prod/release
@@ -75,7 +75,7 @@ jobs:
 
       - name: Sign APK Staging
         if: github.ref == 'refs/heads/staging' 
-        id: sign_app
+        id: sign_app_stagging
         uses: r0adkll/sign-android-release@v1
         with:
           releaseDirectory: android/app/build/outputs/apk/staging/release
@@ -93,7 +93,7 @@ jobs:
       
       - name: Sign APK Dev
         if: github.ref == 'refs/heads/dev' 
-        id: sign_app
+        id: sign_app_dev
         uses: r0adkll/sign-android-release@v1
         with:
           releaseDirectory: android/app/build/outputs/apk/dev/release
