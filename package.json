@@ -16,7 +16,9 @@
     "android:prod:release": "cd android && ./gradlew assembleProdRelease",
     "ios:dev": "yarn ios --scheme 'CiCdGaDev'",
     "ios:staging": "yarn ios --scheme 'CiCdGaStaging'",
-    "ios:prod": "yarn ios --scheme 'CiCdGaProd'"
+    "ios:prod": "yarn ios --scheme 'CiCdGaProd'",
+    "np": "np --no-publish",
+    "postversion": "react-native-version"
   },
   "dependencies": {
     "react": "17.0.2",
@@ -39,8 +41,14 @@
     "eslint": "^7.32.0",
     "jest": "^26.6.3",
     "metro-react-native-babel-preset": "^0.67.0",
+    "np": "^7.6.1",
+    "react-native-version": "^4.0.0",
     "react-test-renderer": "17.0.2",
     "typescript": "^4.4.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/username/your-repo.git"
   },
   "resolutions": {
     "@types/react": "^17"
