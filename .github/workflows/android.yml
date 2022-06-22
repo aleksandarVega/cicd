@@ -1,7 +1,14 @@
 name: Android
 
-on: [push]
-    
+on:
+  pull_request_target:
+    types: 
+      - closed
+    braches:
+       - main
+       - staging
+       - dev
+       
 jobs:
   build:
     if: github.event.pull_request.merged == true
@@ -51,8 +58,6 @@ jobs:
             ${{ runner.os }}-gradle-caches-
       - name: Make Gradlew Executable
         run: cd android && chmod +x ./gradlew
-      
-      
 
       - name: Generate App APK Prod
         if: github.ref == 'refs/heads/main'
