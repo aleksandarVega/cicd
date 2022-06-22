@@ -52,7 +52,7 @@ jobs:
       - name: Make Gradlew Executable
         run: cd android && chmod +x ./gradlew
       
-      if: github.ref == 'refs/heads/dev' || github.ref == 'refs/heads/staging' || github.ref == 'refs/heads/prod'
+      
 
       - name: Generate App APK Prod
         if: github.ref == 'refs/heads/main'
