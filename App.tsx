@@ -36,6 +36,7 @@ const App = () => {
         style={backgroundStyle}
       >
         <Text style={styles.highlight}>{Config.API_KEY}</Text>
+        <Text style={styles.highlight}>Something</Text>
         <YellowText />
       </ScrollView>
     </SafeAreaView>
