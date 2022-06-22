@@ -1,11 +1,13 @@
 name: Android
 
-on: [push, pull_request]
+on: [pull_request]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps: 
+    steps:
+      - run: echo ${{github.ref}}
+ 
       - name: Check out Git repository
         uses: actions/checkout@v3
 
