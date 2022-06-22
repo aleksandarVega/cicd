@@ -1,18 +1,16 @@
 name: Android
 
 on:
-  push:
-    branches:
-      - 'dev'
-    
   pull_request:
+    braches:
+       - main
+       - staging
+       - dev
     types: [closed]
-      branches:
-        - 'dev'
-        - 'staging'
-        - 'main'
+    
 jobs:
   build:
+    if: ${{ github.event.pull_request.merged }}
     runs-on: ubuntu-latest
     steps:
       - name: Check out Git repository
