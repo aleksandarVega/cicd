@@ -1,6 +1,6 @@
 name: Android
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
   build:
@@ -56,32 +56,58 @@ jobs:
       - name: Generate App APK
         run: |
           cd android && ./gradlew assembleProdRelease --no-daemon
-     
-      - name: Sign APK
+
+      - name: Sign APK Prod
+        if: github.ref == 'refs/heads/main' 
         id: sign_app
         uses: r0adkll/sign-android-release@v1
         with:
-          if: ${{github.ref == 'refs/heads/main'}} 
           releaseDirectory: android/app/build/outputs/apk/prod/release
-          if: ${{github.ref == 'refs/heads/staging'}}  
-          releaseDirectory: android/app/build/outputs/apk/staging/release
-          if: ${{github.ref == 'refs/heads/dev'}}  
-          releaseDirectory: android/app/build/outputs/apk/dev/release
-
           signingKeyBase64: ${{ secrets.ANDROID_SIGNING_KEY }}
           alias: ${{ secrets.ANDROID_ALIAS }}
           keyStorePassword: ${{ secrets.ANDROID_KEY_STORE_PASSWORD }}
           keyPassword: ${{ secrets.ANDROID_KEY_PASSWORD }}
       
-      - name: Upload Artifact
+      - name: Upload Artifact Prod
+        if: github.ref == 'refs/heads/main'
         uses: actions/upload-artifact@v3
         with:
           name: app-release.apk
-          if: ${{github.ref == 'refs/heads/main'}} 
           path: android/app/build/outputs/apk/prod/release
-          if: ${{github.ref == 'refs/heads/staging'}} 
+
+      - name: Sign APK Staging
+        if: github.ref == 'refs/heads/staging' 
+        id: sign_app
+        uses: r0adkll/sign-android-release@v1
+        with:
+          releaseDirectory: android/app/build/outputs/apk/staging/release
+          signingKeyBase64: ${{ secrets.ANDROID_SIGNING_KEY }}
+          alias: ${{ secrets.ANDROID_ALIAS }}
+          keyStorePassword: ${{ secrets.ANDROID_KEY_STORE_PASSWORD }}
+          keyPassword: ${{ secrets.ANDROID_KEY_PASSWORD }}
+      
+      - name: Upload Artifact Staging
+        if: github.ref == 'refs/heads/staging'
+        uses: actions/upload-artifact@v3
+        with:
+          name: app-release.apk
           path: android/app/build/outputs/apk/staging/release
-          if: ${{github.ref == 'refs/heads/dev'}} 
+      
+       - name: Sign APK Dev
+        if: github.ref == 'refs/heads/dev' 
+        id: sign_app
+        uses: r0adkll/sign-android-release@v1
+        with:
+          releaseDirectory: android/app/build/outputs/apk/dev/release
+          signingKeyBase64: ${{ secrets.ANDROID_SIGNING_KEY }}
+          alias: ${{ secrets.ANDROID_ALIAS }}
+          keyStorePassword: ${{ secrets.ANDROID_KEY_STORE_PASSWORD }}
+          keyPassword: ${{ secrets.ANDROID_KEY_PASSWORD }}
+      
+      - name: Upload Artifact Dev
+        if: github.ref == 'refs/heads/dev'
+        uses: actions/upload-artifact@v3
+        with:
+          name: app-release.apk
           path: android/app/build/outputs/apk/dev/release
-          
           
