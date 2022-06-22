@@ -1,9 +1,16 @@
 name: Android
 
-on: 
+on:
+  push:
+    branches:
+      - 'dev'
+    
   pull_request:
     types: [closed]
-
+      branches:
+        - 'dev'
+        - 'staging'
+        - 'main'
 jobs:
   build:
     runs-on: ubuntu-latest
