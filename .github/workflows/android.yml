@@ -1,13 +1,6 @@
 name: Android
 
-on:
-  pull_request_target:
-    types: 
-      - closed
-    braches:
-       - main
-       - staging
-       - dev
+on: [push]
     
 jobs:
   build:
@@ -58,6 +51,8 @@ jobs:
             ${{ runner.os }}-gradle-caches-
       - name: Make Gradlew Executable
         run: cd android && chmod +x ./gradlew
+      
+      if: github.ref == 'refs/heads/dev' || github.ref == 'refs/heads/staging' || github.ref == 'refs/heads/prod'
 
       - name: Generate App APK Prod
         if: github.ref == 'refs/heads/main'
