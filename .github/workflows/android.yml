@@ -51,9 +51,20 @@ jobs:
       - name: Make Gradlew Executable
         run: cd android && chmod +x ./gradlew
 
-      - name: Generate App APK
+      - name: Generate App APK Prod
+        if: github.ref == 'refs/heads/main'
         run: |
           cd android && ./gradlew assembleProdRelease --no-daemon
+      
+      - name: Generate App APK Staging
+        if: github.ref == 'refs/heads/staging'
+        run: |
+          cd android && ./gradlew assembleStagingRelease --no-daemon
+      
+      - name: Generate App APK Dev
+        if: github.ref == 'refs/heads/dev'
+        run: |
+          cd android && ./gradlew assembleDevRelease --no-daemon
 
       - name: Sign APK Prod
         if: github.ref == 'refs/heads/main' 
