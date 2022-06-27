@@ -1,0 +1,1 @@
+Android: [![Build status](https://build.appcenter.ms/v0.1/apps/1054fe4a-e06f-4708-996c-9f898c2d5f4e/branches/dev/badge)](https://appcenter.ms)
