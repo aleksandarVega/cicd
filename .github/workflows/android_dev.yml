@@ -16,7 +16,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           distribution: 'zulu'
-          java-version: 8
+          java-version: 11
           java-package: jdk
 
       - name: Get yarn cache directory path
@@ -69,9 +69,19 @@ jobs:
           keyStorePassword: ${{ secrets.ANDROID_KEY_STORE_PASSWORD }}
           keyPassword: ${{ secrets.ANDROID_KEY_PASSWORD }}
       
+      - name: upload artefact to App Center
+        uses: wzieba/AppCenter-Github-Action@v1
+          with:
+            appName: wzieba/Sample-App
+            token: ${{secrets.APP_CENTER_TOKEN}}
+            group: Testers
+            file: android/app/build/outputs/apk/dev/release
+            notifyTesters: true
+            debug: false
+      
       - name: Upload Artifact Dev
         uses: actions/upload-artifact@v3
         with:
           name: app-release.apk
-          path: android/app/build/outputs/apk/dev/release
+          path: android/app/build/outputs/apk/dev/release/app-dev-release.apk
   
