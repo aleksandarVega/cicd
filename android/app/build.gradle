@@ -191,18 +191,21 @@ android {
             applicationId 'com.cicdga.dev'
             targetSdkVersion rootProject.ext.targetSdkVersion
             resValue "string", "build_config_package", "com.cicdga"
+            dimension 'default'
         }
         prod {
             minSdkVersion rootProject.ext.minSdkVersion
             applicationId 'com.cicdga'
             targetSdkVersion rootProject.ext.targetSdkVersion
             resValue "string", "build_config_package", "com.cicdga"
+            dimension 'default'
         }
         staging {
             minSdkVersion rootProject.ext.minSdkVersion
             applicationId 'com.cicdga.staging'
             targetSdkVersion rootProject.ext.targetSdkVersion
             resValue "string", "build_config_package", "com.cicdga"
+            dimension 'default'
         }
     }
 
@@ -251,7 +254,7 @@ android {
         abi {
             reset()
             enable enableSeparateBuildPerCPUArchitecture
-            universalApk true  // If true, also generate a universal APK
+            universalApk false  // If true, also generate a universal APK
             include (*reactNativeArchitectures())
         }
     }
@@ -301,9 +304,6 @@ dependencies {
     implementation "com.facebook.react:react-native:+"  // From node_modules
 
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
-
-    def appCenterSdkVersion = '3.3.0'
-    implementation "com.microsoft.appcenter:appcenter-crashes:${appCenterSdkVersion}"
 
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {
         exclude group:'com.facebook.fbjni'
