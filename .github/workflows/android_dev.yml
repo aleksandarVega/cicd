@@ -75,13 +75,8 @@ jobs:
             appName: wzieba/Sample-App
             token: ${{secrets.APP_CENTER_TOKEN}}
             group: Testers
-            file: android/app/build/outputs/apk/dev/release
+            file: android/app/build/outputs/apk/dev/release/app-dev-release.apk
             notifyTesters: true
             debug: false
-      
-      - name: Upload Artifact Dev
-        uses: actions/upload-artifact@v3
-        with:
-          name: app-release.apk
-          path: android/app/build/outputs/apk/dev/release/app-dev-release.apk
+
   
