@@ -9,6 +9,7 @@ on:
 
 jobs:
   build:
+    if: github.ref == 'refs/heads/dev'
     runs-on: ubuntu-latest
     steps:
       - name: Check out Git repository
