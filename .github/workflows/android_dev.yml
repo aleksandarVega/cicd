@@ -72,7 +72,7 @@ jobs:
       - name: upload artefact to App Center
         uses: wzieba/AppCenter-Github-Action@v1
         with:
-          appName: CICD Android
+          appName: wzieba/CICD Android
           token: ${{secrets.APP_CENTER_TOKEN}}
           group: Testers
           file: android/app/build/outputs/apk/dev/release/app-dev-release.apk
