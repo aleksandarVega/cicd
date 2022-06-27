@@ -1,15 +1,12 @@
 name: Android main
 
 on:
-  pull_request_target:
-    types: 
-      - closed
-    braches:
-       - dev
+  push:
+    branches: 
+      -  dev
 
 jobs:
   build:
-    if: github.ref == 'refs/heads/dev'
     runs-on: ubuntu-latest
     steps:
       - name: Check out Git repository

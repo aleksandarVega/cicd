@@ -1,10 +1,8 @@
 name: Android staging
 
 on:
-  pull_request_target:
-    types: 
-      - closed
-    braches:
+  push:
+    branches: 
        - staging
 
 jobs:
