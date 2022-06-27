@@ -48,9 +48,7 @@ jobs:
             ${{ runner.os }}-gradle-caches-
       - name: Make Gradlew Executable
         run: cd android && chmod +x ./gradlew
-
-      
-
+        
       - name: Sign APK Dev 
         id: sign_app_dev
         uses: r0adkll/sign-android-release@v1
