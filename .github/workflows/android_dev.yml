@@ -68,11 +68,11 @@ jobs:
           alias: ${{ secrets.ANDROID_ALIAS }}
           keyStorePassword: ${{ secrets.ANDROID_KEY_STORE_PASSWORD }}
           keyPassword: ${{ secrets.ANDROID_KEY_PASSWORD }}
-          
+      
       - name: upload artefact to App Center
         uses: wzieba/AppCenter-Github-Action@v1
         with:
-          appName: CiCd
+          appName: wziebaCiCd
           token: ${{secrets.APP_CENTER_TOKEN}}
           group: Testers
           file: android/app/build/outputs/apk/dev/release/app-dev-release.apk
