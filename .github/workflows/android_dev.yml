@@ -69,14 +69,13 @@ jobs:
           keyStorePassword: ${{ secrets.ANDROID_KEY_STORE_PASSWORD }}
           keyPassword: ${{ secrets.ANDROID_KEY_PASSWORD }}
       
-     
       - name: upload artefact to App Center
         uses: wzieba/AppCenter-Github-Action@v1
-          with:
-            appName: SigmaCiCd/cicd
-            token: ${{secrets.APP_CENTER_TOKEN}}
-            group: Beta
-            file: android/app/build/outputs/apk/dev/release/app-dev-release.apk
-            notifyTesters: true
-            debug: false
+        with:
+          appName: SigmaCiCd/cicd
+          token: ${{secrets.APP_CENTER_TOKEN}}
+          group: Beta
+          file: android/app/build/outputs/apk/dev/release/app-dev-release.apk
+          notifyTesters: true
+          debug: false
   
