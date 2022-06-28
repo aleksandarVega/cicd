@@ -69,9 +69,14 @@ jobs:
           keyStorePassword: ${{ secrets.ANDROID_KEY_STORE_PASSWORD }}
           keyPassword: ${{ secrets.ANDROID_KEY_PASSWORD }}
       
-      - name: Upload Artifact Dev
-        uses: actions/upload-artifact@v3
-        with:
-          name: app-release.apk
-          path: android/app/build/outputs/apk/dev/release
+     
+      - name: upload artefact to App Center
+        uses: wzieba/AppCenter-Github-Action@v1
+          with:
+            appName: SigmaCiCd/cicd
+            token: ${{secrets.APP_CENTER_TOKEN}}
+            group: Beta
+            file: android/app/build/outputs/apk/dev/release/app-dev-release.apk
+            notifyTesters: true
+            debug: false
   
