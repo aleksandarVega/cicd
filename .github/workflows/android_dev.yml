@@ -77,5 +77,5 @@ jobs:
           group: Beta
           file: android/app/build/outputs/apk/dev/release/app-dev-release.apk
           notifyTesters: true
-          debug: false
+          debug: true
   
