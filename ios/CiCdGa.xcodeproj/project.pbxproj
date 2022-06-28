@@ -1022,7 +1022,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.vega.cicdga;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vega.cicdga.staging;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "Sigma CICD";
 				SWIFT_VERSION = 5.0;
@@ -1074,7 +1074,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.vega.cicdga;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vega.cicdga.prod;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "Sigma CICD";
 				SWIFT_VERSION = 5.0;
