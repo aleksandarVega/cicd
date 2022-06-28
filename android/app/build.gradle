@@ -191,18 +191,21 @@ android {
             applicationId 'com.cicdga.dev'
             targetSdkVersion rootProject.ext.targetSdkVersion
             resValue "string", "build_config_package", "com.cicdga"
+            dimension 'default'
         }
         prod {
             minSdkVersion rootProject.ext.minSdkVersion
             applicationId 'com.cicdga'
             targetSdkVersion rootProject.ext.targetSdkVersion
             resValue "string", "build_config_package", "com.cicdga"
+            dimension 'default'
         }
         staging {
             minSdkVersion rootProject.ext.minSdkVersion
             applicationId 'com.cicdga.staging'
             targetSdkVersion rootProject.ext.targetSdkVersion
             resValue "string", "build_config_package", "com.cicdga"
+            dimension 'default'
         }
     }
 
