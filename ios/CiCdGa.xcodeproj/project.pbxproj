@@ -12,21 +12,19 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		2CA6D5EE0B5B3E65D1BC5033 /* libPods-CiCdGa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-CiCdGa.a */; };
 		7699B88040F8A987B510C191 /* libPods-CiCdGa-CiCdGaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-CiCdGa-CiCdGaTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		C97614A22861E5DB003FBDA8 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		C97614A32861E5DB003FBDA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		C97614A52861E5DB003FBDA8 /* libPods-CiCdGa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-CiCdGa.a */; };
 		C97614A72861E5DB003FBDA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		C97614A82861E5DB003FBDA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		C97614B52861E7D2003FBDA8 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		C97614B62861E7D2003FBDA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		C97614B82861E7D2003FBDA8 /* libPods-CiCdGa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-CiCdGa.a */; };
 		C97614BA2861E7D2003FBDA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		C97614BB2861E7D2003FBDA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		C97614C82861E932003FBDA8 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		C97614C92861E932003FBDA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		C97614CB2861E932003FBDA8 /* libPods-CiCdGa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-CiCdGa.a */; };
 		C97614CD2861E932003FBDA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		C97614CE2861E932003FBDA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 /* End PBXBuildFile section */
@@ -52,10 +50,9 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = CiCdGa/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = CiCdGa/main.m; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-CiCdGa-CiCdGaTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CiCdGa-CiCdGaTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B4392A12AC88292D35C810B /* Pods-CiCdGa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CiCdGa.debug.xcconfig"; path = "Target Support Files/Pods-CiCdGa/Pods-CiCdGa.debug.xcconfig"; sourceTree = "<group>"; };
-		5709B34CF0A7D63546082F79 /* Pods-CiCdGa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CiCdGa.release.xcconfig"; path = "Target Support Files/Pods-CiCdGa/Pods-CiCdGa.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-CiCdGa-CiCdGaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CiCdGa-CiCdGaTests.debug.xcconfig"; path = "Target Support Files/Pods-CiCdGa-CiCdGaTests/Pods-CiCdGa-CiCdGaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-CiCdGa.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CiCdGa.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67E2A2BC54194C15C3290418 /* Pods-CiCdGa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CiCdGa.release.xcconfig"; path = "Target Support Files/Pods-CiCdGa/Pods-CiCdGa.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = CiCdGa/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-CiCdGa-CiCdGaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CiCdGa-CiCdGaTests.release.xcconfig"; path = "Target Support Files/Pods-CiCdGa-CiCdGaTests/Pods-CiCdGa-CiCdGaTests.release.xcconfig"; sourceTree = "<group>"; };
 		C97614AF2861E5DB003FBDA8 /* CiCdGaDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CiCdGaDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +62,7 @@
 		C97614D52861E932003FBDA8 /* CiCdGaProd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CiCdGaProd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C97614D62861E932003FBDA8 /* CiCdGaProdInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = CiCdGaProdInfo.plist; path = /Users/aleksandarvasic/Desktop/cicd/ios/CiCdGaProdInfo.plist; sourceTree = "<absolute>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F2659CA243CF1213B67C08C8 /* Pods-CiCdGa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CiCdGa.debug.xcconfig"; path = "Target Support Files/Pods-CiCdGa/Pods-CiCdGa.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +79,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C80B921A6F3F58F76C31292 /* libPods-CiCdGa.a in Frameworks */,
+				2CA6D5EE0B5B3E65D1BC5033 /* libPods-CiCdGa.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +87,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C97614A52861E5DB003FBDA8 /* libPods-CiCdGa.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +94,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C97614B82861E7D2003FBDA8 /* libPods-CiCdGa.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,7 +101,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C97614CB2861E932003FBDA8 /* libPods-CiCdGa.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,10 +187,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B4392A12AC88292D35C810B /* Pods-CiCdGa.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-CiCdGa.release.xcconfig */,
 				5B7EB9410499542E8C5724F5 /* Pods-CiCdGa-CiCdGaTests.debug.xcconfig */,
 				89C6BE57DB24E9ADA2F236DE /* Pods-CiCdGa-CiCdGaTests.release.xcconfig */,
+				F2659CA243CF1213B67C08C8 /* Pods-CiCdGa.debug.xcconfig */,
+				67E2A2BC54194C15C3290418 /* Pods-CiCdGa.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -249,14 +245,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C97614AC2861E5DB003FBDA8 /* Build configuration list for PBXNativeTarget "CiCdGaDev" */;
 			buildPhases = (
-				C976149F2861E5DB003FBDA8 /* [CP] Check Pods Manifest.lock */,
 				C97614A02861E5DB003FBDA8 /* Start Packager */,
 				C97614A12861E5DB003FBDA8 /* Sources */,
 				C97614A42861E5DB003FBDA8 /* Frameworks */,
 				C97614A62861E5DB003FBDA8 /* Resources */,
 				C97614A92861E5DB003FBDA8 /* Bundle React Native code and images */,
-				C97614AA2861E5DB003FBDA8 /* [CP] Embed Pods Frameworks */,
-				C97614AB2861E5DB003FBDA8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -271,14 +264,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C97614BF2861E7D2003FBDA8 /* Build configuration list for PBXNativeTarget "CiCdGaStaging" */;
 			buildPhases = (
-				C97614B22861E7D2003FBDA8 /* [CP] Check Pods Manifest.lock */,
 				C97614B32861E7D2003FBDA8 /* Start Packager */,
 				C97614B42861E7D2003FBDA8 /* Sources */,
 				C97614B72861E7D2003FBDA8 /* Frameworks */,
 				C97614B92861E7D2003FBDA8 /* Resources */,
 				C97614BC2861E7D2003FBDA8 /* Bundle React Native code and images */,
-				C97614BD2861E7D2003FBDA8 /* [CP] Embed Pods Frameworks */,
-				C97614BE2861E7D2003FBDA8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -293,14 +283,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C97614D22861E932003FBDA8 /* Build configuration list for PBXNativeTarget "CiCdGaProd" */;
 			buildPhases = (
-				C97614C52861E932003FBDA8 /* [CP] Check Pods Manifest.lock */,
 				C97614C62861E932003FBDA8 /* Start Packager */,
 				C97614C72861E932003FBDA8 /* Sources */,
 				C97614CA2861E932003FBDA8 /* Frameworks */,
 				C97614CC2861E932003FBDA8 /* Resources */,
 				C97614CF2861E932003FBDA8 /* Bundle React Native code and images */,
-				C97614D02861E932003FBDA8 /* [CP] Embed Pods Frameworks */,
-				C97614D12861E932003FBDA8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -489,28 +476,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CiCdGa-CiCdGaTests/Pods-CiCdGa-CiCdGaTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C976149F2861E5DB003FBDA8 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CiCdGa-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C97614A02861E5DB003FBDA8 /* Start Packager */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -543,62 +508,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
-		};
-		C97614AA2861E5DB003FBDA8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CiCdGa/Pods-CiCdGa-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CiCdGa/Pods-CiCdGa-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CiCdGa/Pods-CiCdGa-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C97614AB2861E5DB003FBDA8 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CiCdGa/Pods-CiCdGa-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CiCdGa/Pods-CiCdGa-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CiCdGa/Pods-CiCdGa-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C97614B22861E7D2003FBDA8 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CiCdGa-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
 		};
 		C97614B32861E7D2003FBDA8 /* Start Packager */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -633,62 +542,6 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		C97614BD2861E7D2003FBDA8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CiCdGa/Pods-CiCdGa-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CiCdGa/Pods-CiCdGa-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CiCdGa/Pods-CiCdGa-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C97614BE2861E7D2003FBDA8 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CiCdGa/Pods-CiCdGa-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CiCdGa/Pods-CiCdGa-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CiCdGa/Pods-CiCdGa-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C97614C52861E932003FBDA8 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CiCdGa-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C97614C62861E932003FBDA8 /* Start Packager */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -721,40 +574,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
-		};
-		C97614D02861E932003FBDA8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CiCdGa/Pods-CiCdGa-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CiCdGa/Pods-CiCdGa-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CiCdGa/Pods-CiCdGa-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C97614D12861E932003FBDA8 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CiCdGa/Pods-CiCdGa-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CiCdGa/Pods-CiCdGa-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CiCdGa/Pods-CiCdGa-resources.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -920,7 +739,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-CiCdGa.debug.xcconfig */;
+			baseConfigurationReference = F2659CA243CF1213B67C08C8 /* Pods-CiCdGa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -946,7 +765,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-CiCdGa.release.xcconfig */;
+			baseConfigurationReference = 67E2A2BC54194C15C3290418 /* Pods-CiCdGa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -1109,7 +928,6 @@
 		};
 		C97614AD2861E5DB003FBDA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-CiCdGa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -1135,7 +953,6 @@
 		};
 		C97614AE2861E5DB003FBDA8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-CiCdGa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -1163,7 +980,6 @@
 		};
 		C97614C02861E7D2003FBDA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-CiCdGa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -1189,7 +1005,6 @@
 		};
 		C97614C12861E7D2003FBDA8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-CiCdGa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -1217,7 +1032,6 @@
 		};
 		C97614D32861E932003FBDA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-CiCdGa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -1243,7 +1057,6 @@
 		};
 		C97614D42861E932003FBDA8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-CiCdGa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
