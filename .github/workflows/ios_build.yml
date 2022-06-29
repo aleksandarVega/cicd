@@ -9,9 +9,6 @@ jobs:
   ios-build:
     name: IOS build
     runs-on: macOS-latest
-    defaults:
-      run:
-        working-directory: ios
     steps:
       - name: Check out Git repository
         uses: actions/checkout@v2
@@ -37,7 +34,7 @@ jobs:
         uses: actions/cache@v2
         with:
           path: |
-            Pods
+            ios/Pods
             ~/Library/Caches/CocoaPods
             ~/.cocoapods
           key: ${{ runner.os }}-pods-${{ hashFiles('ios/Podfile.lock') }}
