@@ -51,7 +51,7 @@ jobs:
         run: yarn test
 
       - name: Build IOS App
-        run: "xccodebuild \
+        run: "xcodebuild \
           -workspace ios/CiCdGa.xcworkspace \
           -scheme CiCdGaProd \
           clean archive \ 
