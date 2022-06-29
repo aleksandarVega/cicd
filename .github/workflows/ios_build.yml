@@ -49,12 +49,12 @@ jobs:
       - name: Build IOS App
         run: "xcodebuild \
           -workspace ios/CiCdGa.xcworkspace \
-          -scheme CiCdGaProd \
+          -scheme CiCdGa \
           clean archive \ 
           -sdk iphonesimulator \
           -configuration Debug \
           -UseModernBuildSystem=NO \
-          -archivePath @pwd/CiCdGaProd \
+          -archivePath @pwd/CiCdGa\
           CODE_SIGNING_ALLOWED=NO"
 
       - name: 'Upload app to TestFlight'
