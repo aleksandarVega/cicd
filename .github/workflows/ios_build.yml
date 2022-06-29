@@ -41,7 +41,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pods-
       - name: Install Pods
-        run: cd ios && chmod -R 777 ./ && rm -R CiCdGa.xcworkspace && rm -R Pods  && rm Podfile.lock && pod install --repo-update && cd ..
+        run: cd ios && chmod -R 777 ./ && rm -R Pods  && rm Podfile.lock && pod install --repo-update && cd ..
     
       - name: Run tests
         run: yarn test
