@@ -53,20 +53,20 @@ jobs:
         run: yarn test
 
       - name: Build IOS App
-        uses: sparkfabrik/ios-build-action@v2
+        uses: sparkfabrik/ios-build-action@v1.0.0
         with:
-          upload-to-testflight: true
-          increment-build-number: true
-          build-pods: true
-          pods-path: 'ios/Podfile'
-          configuration: Release
-          export-method: app-store
-          workspace-path: ios/CiCdGa.xcworkspace
           project-path: ios/CiCdGa.xcodeproj
-          apple-key-issuer-id: ${{ secrets.APPSTORE_ISSUER_ID }}
-          api-key-id: ${{ secrets.APPSTORE_API_KEY_ID }}
-          apple-key-content: ${{ secrets.APPSTORE_API_PRIVATE_KEY }}
+          p12-base64: ${{ secrets.IOS_P12_BASE64 }}
+          mobileprovision-base64: ${{ secrets.IOS_MOBILE_PROVISION_BASE64 }}
+          code-signing-identity: 'iOS Distribution'
           team-id: ${{ secrets.IOS_TEAM_ID }}
-          match-password: ${{ secrets.IOS_CERTIFICATE_PASSWORD }}
+          workspace-path: ios/CiCdGa.xcworkspace
           scheme: CiCdGaProd
 
+      - name: 'Upload app to TestFlight'
+        uses: apple-actions/upload-testflight-build@v1
+        with:
+          app-path: 'output.ipa'
+          issuer-id: ${{ secrets.APPSTORE_ISSUER_ID }}
+          api-key-id: ${{ secrets.APPSTORE_API_KEY_ID }}
+          api-private-key: ${{ secrets.APPSTORE_API_PRIVATE_KEY }}
