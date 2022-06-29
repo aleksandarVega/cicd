@@ -37,7 +37,7 @@ jobs:
         uses: actions/cache@v2
         with:
           path: |
-            ios/Pods
+            Pods
             ~/Library/Caches/CocoaPods
             ~/.cocoapods
           key: ${{ runner.os }}-pods-${{ hashFiles('ios/Podfile.lock') }}
@@ -55,10 +55,10 @@ jobs:
           -workspace ios/CiCdGa.xcworkspace \
           -scheme CiCdGaProd \
           clean archive \ 
-          -sdk iphones \
+          -sdk iphonesimulator \
           -configuration Debug \
           -UseModernBuildSystem=NO \
-          -archivePath @pwd/CiCdGa \
+          -archivePath @pwd/CiCdGaProd \
           CODE_SIGNING_ALLOWED=NO"
 
       - name: 'Upload app to TestFlight'
