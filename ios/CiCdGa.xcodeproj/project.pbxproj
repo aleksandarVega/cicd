@@ -759,6 +759,7 @@
 				PRODUCT_NAME = CiCdGa;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				VALIDATE_WORKSPACE = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -787,6 +788,7 @@
 				PRODUCT_NAME = CiCdGa;
 				PROVISIONING_PROFILE_SPECIFIER = "Sigma CICD";
 				SWIFT_VERSION = 5.0;
+				VALIDATE_WORKSPACE = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
