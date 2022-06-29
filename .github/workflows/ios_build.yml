@@ -53,7 +53,7 @@ jobs:
         run: yarn test
 
       - name: Build IOS App
-        uses: sparkfabrik/ios-build-action@v1.0.0
+        uses: sparkfabrik/ios-build-action@v2
         with:
           upload-to-testflight: true
           increment-build-number: true
