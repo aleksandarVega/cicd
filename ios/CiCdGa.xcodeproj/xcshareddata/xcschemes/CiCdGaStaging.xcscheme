@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1330"
+   LastUpgradeVersion = "1340"
    version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -10,11 +10,11 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script"
-               scriptText = "# Type a script or drag a script file from your workspace to insert its path.&#10;cp &quot;${PROJECT_DIR}/../.env.staging&quot; &quot;${PROJECT_DIR}/../.env&quot;&#10;">
+               scriptText = "# Type a script or drag a script file from your workspace to insert its path.&#10;cp &quot;${PROJECT_DIR}/../.env.staging&quot; &quot;${PROJECT_DIR}/../.env&quot; &#10;">
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
-                     BlueprintIdentifier = "C97614B12861E7D2003FBDA8"
+                     BlueprintIdentifier = "C94645F2287592D2003905C5"
                      BuildableName = "CiCdGaStaging.app"
                      BlueprintName = "CiCdGaStaging"
                      ReferencedContainer = "container:CiCdGa.xcodeproj">
@@ -32,7 +32,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C97614B12861E7D2003FBDA8"
+               BlueprintIdentifier = "C94645F2287592D2003905C5"
                BuildableName = "CiCdGaStaging.app"
                BlueprintName = "CiCdGaStaging"
                ReferencedContainer = "container:CiCdGa.xcodeproj">
@@ -62,7 +62,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C97614B12861E7D2003FBDA8"
+            BlueprintIdentifier = "C94645F2287592D2003905C5"
             BuildableName = "CiCdGaStaging.app"
             BlueprintName = "CiCdGaStaging"
             ReferencedContainer = "container:CiCdGa.xcodeproj">
@@ -79,7 +79,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C97614B12861E7D2003FBDA8"
+            BlueprintIdentifier = "C94645F2287592D2003905C5"
             BuildableName = "CiCdGaStaging.app"
             BlueprintName = "CiCdGaStaging"
             ReferencedContainer = "container:CiCdGa.xcodeproj">

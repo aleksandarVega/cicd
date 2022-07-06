@@ -72,11 +72,10 @@ jobs:
       - name: upload artefact to App Center
         uses: wzieba/AppCenter-Github-Action@v1
         with:
-          appName: wziebaCiCd
+          appName: SigmaCiCd/cicd-1
           token: ${{secrets.APP_CENTER_TOKEN}}
-          group: Testers
+          group: Beta
           file: android/app/build/outputs/apk/dev/release/app-dev-release.apk
           notifyTesters: true
-          debug: false
-
+          debug: true
   

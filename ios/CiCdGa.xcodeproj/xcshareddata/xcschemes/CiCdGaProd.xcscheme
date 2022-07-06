@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1330"
+   LastUpgradeVersion = "1340"
    version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
-                     BlueprintIdentifier = "C97614C42861E932003FBDA8"
+                     BlueprintIdentifier = "C9464606287593D5003905C5"
                      BuildableName = "CiCdGaProd.app"
                      BlueprintName = "CiCdGaProd"
                      ReferencedContainer = "container:CiCdGa.xcodeproj">
@@ -32,8 +32,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C97614C42861E932003FBDA8"
-               BuildableName = "CiCdGaProd.app"
+               BlueprintIdentifier = "C9464606287593D5003905C5"
+               BuildableName = "CiCdGa copy.app"
                BlueprintName = "CiCdGaProd"
                ReferencedContainer = "container:CiCdGa.xcodeproj">
             </BuildableReference>
@@ -62,8 +62,8 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C97614C42861E932003FBDA8"
-            BuildableName = "CiCdGaProd.app"
+            BlueprintIdentifier = "C9464606287593D5003905C5"
+            BuildableName = "CiCdGa copy.app"
             BlueprintName = "CiCdGaProd"
             ReferencedContainer = "container:CiCdGa.xcodeproj">
          </BuildableReference>
@@ -79,8 +79,8 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C97614C42861E932003FBDA8"
-            BuildableName = "CiCdGaProd.app"
+            BlueprintIdentifier = "C9464606287593D5003905C5"
+            BuildableName = "CiCdGa copy.app"
             BlueprintName = "CiCdGaProd"
             ReferencedContainer = "container:CiCdGa.xcodeproj">
          </BuildableReference>
